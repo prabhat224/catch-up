@@ -2,14 +2,18 @@
 import { RouterLink, RouterView } from 'vue-router'
 import Loginview from './views/loginView.vue'
 import signupView from './views/signupView.vue';
+import logoutView from './views/logoutView.vue';
+import homeView from './views/homeView.vue';
 </script>
 
 <template>
   <div class="bg-purple-500 pl-10 pr-10 pt-3 pb-3 justify-between items-center flex">
-  <div class="text-white">Logo</div>
+    <RouterLink to="/">  <div class="text-white text-3xl font-bold">Logo</div>
+</RouterLink>
     <div class="justify-between flex ">
-      <div class="cursor-pointer pl-7 pr-7 text-white rounded hover:underline">Friends</div>
-      <div class="cursor-pointer hover:underline rounded ease-in-out pl-7 pr-7 text-white ">Community</div>
+       <RouterLink to="logout"><div class="cursor-pointer pl-7 pr-7 text-white rounded hover:underline">Friends</div></RouterLink>
+       <RouterLink to="logout">      <div class="cursor-pointer hover:underline rounded ease-in-out pl-7 pr-7 text-white ">Community</div>
+</RouterLink>
     </div>
     <!-- <div class="bg-purple-300 cursor-pointer rounded-full p-2"><img class="w-7 h-7 rounded-full"
                 src="./assets/icons8-user-96.png" alt="">-->
@@ -28,10 +32,11 @@ import signupView from './views/signupView.vue';
       </button>
       <ul class="bg-purple-400 z-50 border rounded-sm transform scale-0 group-hover:scale-100 absolute 
         transition duration-150 ease-in-out origin-top min-w-32">
-        <li class="rounded-sm px-3 py-1 hover:bg-gray-100 cursor-pointer">Profile</li>
-        <li class="rounded-sm px-3 py-1 hover:bg-gray-100 cursor-pointer">Settings</li>
-        <li class="rounded-sm px-3 py-1 hover:bg-gray-100 cursor-pointer">Log Out</li>
-        <li class="rounded-sm px-3 py-1 hover:bg-gray-100 cursor-pointer">Add Location</li>
+        <RouterLink to="profile">
+        <li class="rounded-sm px-3 py-1 hover:bg-gray-100 cursor-pointer">Profile</li></RouterLink>
+        <RouterLink to="settings"><li class="rounded-sm px-3 py-1 hover:bg-gray-100 cursor-pointer">Settings</li></RouterLink>
+        <RouterLink to="logout"><li class="rounded-sm px-3 py-1 hover:bg-gray-100 cursor-pointer">Log Out</li></RouterLink>
+        <RouterLink to="locations"><li class="rounded-sm px-3 py-1 hover:bg-gray-100 cursor-pointer">Add Location</li></RouterLink>
       </ul>
     </div>
 

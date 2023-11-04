@@ -18,12 +18,12 @@ const router = createRouter({
       component:signupView
     },
     {
-      path:'/logOut',
+      path:'/logout',
       name:'logout',
       component:logoutView
     },
     {
-      path:'/home',
+      path:'/',
       name:'home',
       component:homeView
     }

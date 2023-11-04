@@ -4,12 +4,12 @@
             WELCOME RISHABH
         </div>
 
-        <div class="bg-purple-400 pl-10 pr-10 pt-10 space-y-7">
-            <div class="text-2xl font-semibold ml-20">Friends in your Area: 20 </div>
-            <div class="text-2xl font-semibold ml-20">Communities in your Area: 12</div>
+        <div class="bg-purple-400 pl-10 pr-10 pt-10 pb-7 ">
+            <div class="text-2xl font-semibold ml-20 pt-5">Friends in your Area: 20 </div>
+            <div class="text-2xl font-semibold ml-20 pt-5">Communities in your Area: 12</div>
 
-            <div class="text-2xl ml-20 font-bold pl-7">Scheduled Meetups:</div>
-            <main class="w-3/5 p-8 pt-0 mx-auto">
+            <div class="text-2xl ml-20 font-bold pl-7 pt-3">Scheduled Meetups:</div>
+            <main class="w-3/5 m-10 mx-auto">
                 <section class="shadow-xl row">
                     <div class="tabs">
                         <div class="border-b tab">
@@ -33,17 +33,17 @@
                                     </div>
                                 </header>
                                 <div class="tab-content">
-                                    <div class="pl-8 pr-8 pb-5 text-grey-darkest">
+                                    <div class="pl-8 pr-8 pb-7 text-grey-darkest">
                                         <ul class="pl-4">
-                                            <li class="pb-2">
+                                            <li class="">
                                                 Meet sahil
                                             </li>
-                                            <li class="pb-2">
+                                            <li class="">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel accusantium ab
                                                 corporis culpa odio totam expedita ut. Ipsam illo, velit natus ad quaerat
                                                 placeat, laboriosam excepturi alias doloremque eum officia.
                                             </li>
-                                            <li class="pb-2">
+                                            <li class="">
                                                 Viverra orci sagittis eu volutpat odio facilisis mauris
                                             </li>
                                         </ul>
@@ -74,15 +74,15 @@
                                 <div class="tab-content">
                                     <div class="pl-8 pr-8 pb-5 text-grey-darkest">
                                         <ul class="pl-4">
-                                            <li class="pb-2">
+                                            <li class="">
                                                 Meet sahil
                                             </li>
-                                            <li class="pb-2">
+                                            <li class="">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel accusantium ab
                                                 corporis culpa odio totam expedita ut. Ipsam illo, velit natus ad quaerat
                                                 placeat, laboriosam excepturi alias doloremque eum officia.
                                             </li>
-                                            <li class="pb-2">
+                                            <li class="">
                                                 Viverra orci sagittis eu volutpat odio facilisis mauris
                                             </li>
                                         </ul>
@@ -113,15 +113,15 @@
                                 <div class="tab-content">
                                     <div class="pl-8 pr-8 pb-5 text-grey-darkest">
                                         <ul class="pl-4">
-                                            <li class="pb-2">
+                                            <li class="">
                                                 Meet sahil
                                             </li>
-                                            <li class="pb-2">
+                                            <li class="">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel accusantium ab
                                                 corporis culpa odio totam expedita ut. Ipsam illo, velit natus ad quaerat
                                                 placeat, laboriosam excepturi alias doloremque eum officia.
                                             </li>
-                                            <li class="pb-2">
+                                            <li class="">
                                                 Viverra orci sagittis eu volutpat odio facilisis mauris
                                             </li>
                                         </ul>
