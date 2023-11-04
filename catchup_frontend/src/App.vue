@@ -1,85 +1,74 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import Loginview from './views/loginView.vue'
+import signupView from './views/signupView.vue';
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+  <div class="bg-purple-500 pl-10 pr-10 pt-3 pb-3 justify-between items-center flex">
+  <div class="text-white">Logo</div>
+    <div class="justify-between flex ">
+      <div class="cursor-pointer pl-7 pr-7 text-white rounded hover:underline">Friends</div>
+      <div class="cursor-pointer hover:underline rounded ease-in-out pl-7 pr-7 text-white ">Community</div>
     </div>
-  </header>
+    <!-- <div class="bg-purple-300 cursor-pointer rounded-full p-2"><img class="w-7 h-7 rounded-full"
+                src="./assets/icons8-user-96.png" alt="">-->
+    <div class="group inline-block">
+      <button class="outline-none focus:outline-none  px-3 py-1 bg-none  rounded-sm flex items-center min-w-20">
+        <span class="pr-1 font-semibold flex-1">
+          <div class="bg-purple-300 cursor-pointer rounded-full p-2"><img class="w-7 h-7 rounded-full"
+              src="./assets/icons8-user-96.png" alt=""></div>
+        </span>
+        <span>
+          <svg class="fill-current h-4 w-4 transform group-hover:-rotate-180
+              transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+          </svg>
+        </span>
+      </button>
+      <ul class="bg-purple-400 z-50 border rounded-sm transform scale-0 group-hover:scale-100 absolute 
+        transition duration-150 ease-in-out origin-top min-w-32">
+        <li class="rounded-sm px-3 py-1 hover:bg-gray-100 cursor-pointer">Profile</li>
+        <li class="rounded-sm px-3 py-1 hover:bg-gray-100 cursor-pointer">Settings</li>
+        <li class="rounded-sm px-3 py-1 hover:bg-gray-100 cursor-pointer">Log Out</li>
+        <li class="rounded-sm px-3 py-1 hover:bg-gray-100 cursor-pointer">Add Location</li>
+      </ul>
+    </div>
 
+  </div>
   <RouterView />
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
+li>ul {
+  transform: translatex(100%) scale(0)
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+li:hover>ul {
+  transform: translatex(101%) scale(1)
 }
 
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
+li>button svg {
+  transform: rotate(-90deg)
 }
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
+li:hover>button svg {
+  transform: rotate(-270deg)
 }
 
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
+.group:hover .group-hover\:scale-100 {
+  transform: scale(1)
 }
 
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
+.group:hover .group-hover\:-rotate-180 {
+  transform: rotate(180deg)
 }
 
-nav a:first-of-type {
-  border: 0;
+.scale-0 {
+  transform: scale(0)
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
+.min-w-32 {
+  min-width: 8rem
 }
 </style>
